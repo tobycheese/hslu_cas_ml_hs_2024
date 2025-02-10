@@ -1,1 +1,1 @@
-# hslu_cas_ml_fs_2025
+# hslu_cas_ml_hs_2024
