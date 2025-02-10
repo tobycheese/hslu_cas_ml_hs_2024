@@ -31,6 +31,13 @@
 		"cpus": 4,
 		"memory": "16gb",
 		"storage": "32gb"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.live-server"
+			]
+		}
 	}
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
