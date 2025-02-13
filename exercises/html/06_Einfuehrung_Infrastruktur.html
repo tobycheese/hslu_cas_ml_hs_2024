@@ -153,7 +153,20 @@
                     <h3 class="title is-3"> Object Store</h3>
 
                     <div class="block">
-                        Wir verwenden für die Datenablage einen Object Store. In Object Store speichern wir
+                        Wir verwenden für die Datenablage einen Object Store. Ein Object Store speichert Daten als
+                        eigenständige Objekte, die jeweils eine eindeutige ID, Metadaten und die eigentlichen Daten
+                        enthalten. Diese Objekte sind nicht in einer hierarchischen Struktur wie bei Dateisystemen
+                        organisiert, was eine hohe Skalierbarkeit und einfachen Zugriff auf grosse Datenmengen
+                        ermöglicht.
+                        Im Gegensatz dazu verwendet ein Block-Speicher Datenblöcke, die in feste Grössen aufgeteilt sind
+                        und in einer festen Struktur auf der Festplatte gespeichert werden. Block-Speicher ist ideal für
+                        Anwendungen, die direkten, schnellen Zugriff auf Daten benötigen, wie Datenbanken oder
+                        Betriebssysteme. Der wesentliche Unterschied liegt also darin, dass Objektspeicher für
+                        unstrukturierte Daten und grosse, skalierbare Speicherung ausgelegt ist, während Block-Speicher
+                        für strukturierte Daten und schnelle Lese-/Schreibvorgänge optimiert ist. Amazon S3 ist das
+                        klassische Beispiel eines Object Stores. Wir setzen hier einen lokalen Object Store auf, der ein
+                        S3-kompatibles API bietet.
+                        Wir verwenden ihn für die Speicherung von
                         Trainingsdaten, Artefakte aus dem Trainingsprozess, Features und Predictions. Dazu verwenden wir
                         das Produkt <a href="https://min.io/">MinIO</a>, welches uns erlaubt, einen lokal laufenden
                         Object Store mit minimaler Konfiguration aufzusetzen.
